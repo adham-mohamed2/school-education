@@ -48,7 +48,10 @@ body{
 .card-about , .card-team{
     background-color:var(--color-bg2) ;
     border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
 }
+
 .img-about{
     width:90%
 }
@@ -59,8 +62,30 @@ body{
 .card-img-top{
     height:210px;
     border-radius: 10px;
+    object-fit: cover;
 }
-
+.socila-link-team{
+    position: absolute;
+    right:-30%;
+    top:50%;
+    height:150px;
+    border-radius: 5px;
+    width:40px;
+    transform: translateY(-50%);
+    background-color: var(--color-bg1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.socila-link-team i{
+    color: var(--color-white);
+    
+}
+.card-team:hover .socila-link-team{
+    right:0;
+}
 /* start course padge style */
 .card-course{
     background-color: var(--color-bg1);
